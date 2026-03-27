@@ -97,9 +97,13 @@ class VeritasAgent {
     await this.storageManager.saveActiveTopic(this.activeTopic);
     this.isRunning = true;
     
-    // Start continuous monitoring
+    console.log('[Veritas] Topic started, initiating search...');
+    
+    // Start continuous monitoring - execute immediately
     await this.performInitialSearch();
     this.scheduleNextCheck();
+    
+    console.log('[Veritas] Search scheduled, topic is now active');
   }
 
   async stopTopic() {
@@ -141,10 +145,13 @@ class VeritasAgent {
       
       // Search for viral news
       const articles = await this.newsScraper.searchNews(this.activeTopic.name);
+      console.log('[Veritas] Found', articles.length, 'articles');
+      
       this.activeTopic.articlesFound += articles.length;
       
       // Verify each article
       for (const article of articles) {
+        console.log('[Veritas] Verifying article:', article.title.substring(0, 50));
         const verification = await this.factChecker.verifyArticle(article);
         this.activeTopic.verificationsCompleted++;
         
@@ -160,6 +167,8 @@ class VeritasAgent {
       
       // Send update to popup
       this.sendStatusUpdate();
+      
+      console.log('[Veritas] Initial search completed. Verified:', this.activeTopic.verificationsCompleted, 'articles');
       
     } catch (error) {
       console.error('[Veritas] Error in initial search:', error);

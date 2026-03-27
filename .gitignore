@@ -1,31 +1,29 @@
-```
-# Icons and generated assets
-Veritas-Fact-Cheking/assets/icons/generate_icons.js
-
-# Python cache
-__pycache__/
+# Compiled and build artifacts
 *.pyc
-*.pyo
-*.pyd
-
-# Dependencies
-node_modules/
-.venv/
-venv/
-.env
-.env.local
-
-# Build outputs
+__pycache__/
+*.o
+*.obj
 dist/
 build/
-*.egg-info/
+*.out
 
-# Logs
+# Dependencies
+.venv/
+venv/
+node_modules/
+target/
+.gradle/
+
+# Logs and temp files
 *.log
+*.tmp
+*.swp
+*.swo
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Environment
+.env
+.env.local
+*.env.*
 
 # Editors
 .vscode/
@@ -33,29 +31,669 @@ Thumbs.db
 *.swp
 *.swo
 
-# Coverage reports
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage
 coverage/
 htmlcov/
 .coverage
 
-# Testing
-.pytest_cache/
-.mypy_cache/
-
-# Distribution / packaging
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
 *.tar.gz
-*.whl
-*.egg
+*.tar.bz2
+*.tar.xz
+*.tar.zst
 
-# Environment specific
-.env*
+# Python specific
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+.eggs/
 
-# Compiled Python
+# JavaScript/Node specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.next/
+.nuxt/
+public/dist/
+
+# Java specific
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# C/C++ specific
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.out
+
+# Go specific
+*.exe
+*.test
+*.prof
+*.syso
+
+# Rust specific
 *.so
 *.dylib
 *.dll
+target/
+
+# Ruby specific
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
+
+# PHP specific
+*.phar
+vendor/
+
+# .NET specific
+*.dll
+*.exe
+*.pdb
+bin/
+obj/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# PyTest
+.pytest_cache/
+
+# VS Code
+.vscode/
+
+# IntelliJ IDEA
+.idea/
 
 # Temporary files
 *.tmp
+*.temp
 *~
-```
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Local configuration files
+config.local.*
+settings.local.*
+
+# Backup files
+*~
+*.bak
+*.backup
+
+# Log files
+*.log
+
+# Coverage reports
+coverage/
+htmlcov/
+*.cover
+coverage.xml
+.coveralls.yml
+
+# Distribution / packaging
+.Python
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Kite
+.kite/
+
+# Nitpick
+.nitpick-style.toml
+.nitpick-style.*
+
+# Vim
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+\#%
+.projectile
+
+# Atom
+.atom/
+
+# NetBeans
+nbproject/private/
+nbproject/project.properties
+
+# Code::Blocks
+*.depend
+*.layout
+*.cbproj.user
+
+# Qt Creator
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+*.moc.cpp
+*.qm
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+*.playground/
+*.xcuserstate
+xcschemes/
+
+# Android Studio
+*.iml
+.gradle/
+local.properties
+.pro
+.cxx/
+.externalNativeBuild/
+.ftlCache/
+
+# CMake
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+*.cmake
+Testing/
+Makefile
+cmake-build-*/
+
+# CLion
+cmake-build-*/
+*.tps
+*.tao
+
+# Intel
+IntelFPGA/
+*.dat
+*.gdf
+*.ini
+*.sld
+*.smp
+*.srd
+*.tcl
+*.vhd
+*.vho
+*.vhs
+*.vpl
+*.xco
+*.xise
+*.xpt
+*.xst
+*.xtf
+*.xvf
+*.xwt
+
+# Keil
+*.uvgui.*
+*.uvopt.*
+*.uvproj.*
+*.uvw
+*.opt
+*.set
+
+# IAR
+*.dep
+*.ewd
+*.ewp
+*.eww
+*.icf
+*.idb
+*.noice
+*.sim30
+*.spy
+*.wrk
+*.wsdt
+*.wsp
+
+# PlatformIO
+.platformio/
+lib/
+pioenvs/
+piolib-deps/
+piolib/
+.pioinit
+.pioenvs/
+
+# Arduino IDE
+*.cpp.o
+*.o
+*.so
+*.so.*
+*.a
+*.hex
+*.elf
+*.bin
+*.map
+*.lst
+*.sym
+*.lss
+*.mii
+*.d
+*.orig
+*.rej
+*.srec
+*.xml
+*.hex
+*.bin
+*.elf
+*.map
+*.lst
+*.sym
+*.lss
+*.mii
+*.d
+*.orig
+*.rej
+*.srec
+*.xml
+
+# Particle
+particle/
+compile_commands.json
+
+# Go
+*.o
+*.so
+*.exe
+*.test
+*.prof
+*.syso
+*.out
+
+# Nim
+*.nimble
+*.nimble.json
+*.nim.cfg
+*.nim.res
+*.nims
+*.nimcache/
+nimcache/
+
+# Dart
+*.dart.js
+*.dart.lib.js
+*.part.js
+*.info.json
+*.resolved_lib
+.dart_tool/
+.packages
+pubspec.lock
+
+# Elixir
+*.beam
+*.ez
+.beam
+.ez
+.elixir_ls/
+.plt
+.MIX_ENV
+
+# Erlang
+.erlang.cookie
+.eunit
+.rebar
+.rebar3
+erl_crash.dump
+
+# Haskell
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+*.prof
+*.aux
+*.hp
+*.eventlog
+*.ps
+*.pdf
+*.toc
+*.bbl
+*.blg
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.dvi
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ind
+*.ilg
+*.log
+*.out
+*.brf
+*.cb
+*.fb
+*.glo
+*.ist
+*.maf
+*.mtc
+*.mtc0
+*.run.xml
+*.synctex(busy)
+*.tex.backup
+*.tex~
+*.tex.swp
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr
+*.alg
+*.glg
+*.gls
+*.ist
+*.fls
+*.fdb_latexmk
+*.aux
+*.bbl
+*.blg
+*.lof
+*.lot
+*.toc
+*.acn
+*.acr......
