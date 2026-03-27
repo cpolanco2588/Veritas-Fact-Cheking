@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veritas Fact Checking</title>
+  <link rel="stylesheet" href="../styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🔍 Veritas</h1>
+      <p class="subtitle">Fact Checking en Tiempo Real</p>
+    </header>
+
+    <main>
+      <!-- Topic Input Section -->
+      <section id="topic-section" class="section">
+        <h2>Nuevo Tema de Investigación</h2>
+        <div class="input-group">
+          <input 
+            type="text" 
+            id="topic-input" 
+            placeholder="Ingresa el tema a investigar..."
+            autocomplete="off"
+          />
+          <button id="start-btn" class="btn btn-primary">
+            Iniciar Investigación
+          </button>
+        </div>
+      </section>
+
+      <!-- Active Topic Section -->
+      <section id="active-topic-section" class="section hidden">
+        <h2>Investigación Activa</h2>
+        <div class="topic-info">
+          <div class="topic-name" id="active-topic-name"></div>
+          <div class="topic-status">
+            <span class="status-indicator active"></span>
+            <span id="status-text">En progreso</span>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-label">Artículos:</span>
+              <span class="stat-value" id="articles-count">0</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Verificados:</span>
+              <span class="stat-value" id="verified-count">0</span>
+            </div>
+          </div>
+          <button id="stop-btn" class="btn btn-danger">
+            Detener Investigación
+          </button>
+        </div>
+      </section>
+
+      <!-- Progress Section -->
+      <section id="progress-section" class="section">
+        <h2>Progreso</h2>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <p class="progress-text" id="progress-text">Esperando inicio...</p>
+      </section>
+
+      <!-- Recent Reports Section -->
+      <section id="reports-section" class="section">
+        <h2>Reportes Recientes</h2>
+        <div id="reports-list" class="reports-list">
+          <p class="empty-message">No hay reportes recientes</p>
+        </div>
+        <button id="view-all-btn" class="btn btn-secondary">
+          Ver Todos los Reportes
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Veritas v1.0.0 - Verificación Autónoma de Datos</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./popup.js"></script>
+</body>
+</html>

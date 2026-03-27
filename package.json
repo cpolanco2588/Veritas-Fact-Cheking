@@ -1,0 +1,34 @@
+{
+  "name": "veritas-fact-checking",
+  "version": "1.0.0",
+  "description": "Chrome extension for autonomous real-time fact checking",
+  "author": "Veritas Team",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "googleapis": "^128.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.254",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
