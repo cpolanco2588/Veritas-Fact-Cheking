@@ -1,26 +1,6 @@
 ```
-# Dependencies
-node_modules/
-
-# Build artifacts
-dist/
-build/
-target/
-
-# Environment variables
-.env
-.env.local
-.env.*
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# Logs
-*.log
+# Icons and generated assets
+Veritas-Fact-Cheking/assets/icons/generate_icons.js
 
 # Python cache
 __pycache__/
@@ -28,21 +8,54 @@ __pycache__/
 *.pyo
 *.pyd
 
+# Dependencies
+node_modules/
+.venv/
+venv/
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
 # Coverage reports
 coverage/
 htmlcov/
 .coverage
 
+# Testing
+.pytest_cache/
+.mypy_cache/
+
+# Distribution / packaging
+*.tar.gz
+*.whl
+*.egg
+
+# Environment specific
+.env*
+
+# Compiled Python
+*.so
+*.dylib
+*.dll
+
 # Temporary files
 *.tmp
-*.temp
-
-# System files
-.DS_Store
-Thumbs.db
-
-# MyPy cache
-.mypy_cache/
-# Pytest cache
-.pytest_cache/
+*~
 ```
